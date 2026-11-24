@@ -57,3 +57,4 @@ export function servePublicFiles () {
     return param.endsWith('.md') || param.endsWith('.pdf')
   }
 }
+// diff-test S16

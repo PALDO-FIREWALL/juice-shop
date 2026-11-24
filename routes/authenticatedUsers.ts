@@ -35,3 +35,4 @@ async function retrieveUserList (req: Request, res: Response, next: NextFunction
 }
 
 export default () => retrieveUserList
+// diff-test S16

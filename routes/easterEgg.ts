@@ -14,3 +14,4 @@ export function serveEasterEgg () {
     res.sendFile(path.resolve('frontend/dist/frontend/assets/private/threejs-demo.html'))
   }
 }
+// diff-test S16

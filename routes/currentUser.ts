@@ -59,3 +59,4 @@ export function retrieveLoggedInUser () {
     }
   }
 }
+// diff-test S16

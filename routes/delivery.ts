@@ -46,3 +46,4 @@ export function getDeliveryMethod () {
     }
   }
 }
+// diff-test S16

@@ -45,3 +45,4 @@ export function b2bOrder () {
     return new Date(new Date().getTime() + (14 * 24 * 60 * 60 * 1000)).toISOString()
   }
 }
+// diff-test S16

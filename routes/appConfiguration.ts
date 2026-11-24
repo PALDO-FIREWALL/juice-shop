@@ -15,3 +15,4 @@ export function retrieveAppConfiguration () {
     res.json({ config: safeConfig })
   }
 }
+// diff-test S16
