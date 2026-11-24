@@ -1,3 +1,13 @@
+// diff-test S08: 줄 밀기용 주석 1
+// diff-test S08: 줄 밀기용 주석 2
+// diff-test S08: 줄 밀기용 주석 3
+// diff-test S08: 줄 밀기용 주석 4
+// diff-test S08: 줄 밀기용 주석 5
+// diff-test S08: 줄 밀기용 주석 6
+// diff-test S08: 줄 밀기용 주석 7
+// diff-test S08: 줄 밀기용 주석 8
+// diff-test S08: 줄 밀기용 주석 9
+// diff-test S08: 줄 밀기용 주석 10
 /*
  * Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
  * SPDX-License-Identifier: MIT
