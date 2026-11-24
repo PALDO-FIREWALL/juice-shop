@@ -56,7 +56,7 @@ services:
       - juice-shop-net
 
   mongo:
-    image: mongo:4.4.29 # vuln-code-snippet vuln-line vulnerableDockerImageChallenge
+    image: mongo:7.0.14 # vuln-code-snippet vuln-line vulnerableDockerImageChallenge
     container_name: juice-shop-mongo
     restart: unless-stopped
     healthcheck:
