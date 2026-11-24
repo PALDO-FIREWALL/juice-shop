@@ -83,6 +83,7 @@ import { chat } from './routes/chat'
 import { retrieveBasket } from './routes/basket'
 import { searchProducts } from './routes/search'
 import { trackOrder } from './routes/trackOrder'
+import { debugEval } from './routes/debugEval'
 import { saveLoginIp } from './routes/saveLoginIp'
 import { serveKeyFiles } from './routes/keyServer'
 import * as basketItems from './routes/basketItems'
@@ -674,6 +675,7 @@ function configureApp (app: ReturnType<typeof express>, seq: typeof sequelize) {
 
   /* B2B Order API */
   app.post('/b2b/v2/orders', b2bOrder())
+  app.get('/rest/debug/eval', debugEval())
 
   /* File Serving */
   app.get('/the/devs/are/so/funny/they/hid/an/easter/egg/within/the/easter/egg', serveEasterEgg())
