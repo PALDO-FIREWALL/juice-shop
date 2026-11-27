@@ -154,7 +154,7 @@ export const deluxeToken = (email: string) => {
 export const isAccounting = () => {
   return (req: Request, res: Response, next: NextFunction) => {
     const decodedToken = verify(utils.jwtFrom(req)) && decode(utils.jwtFrom(req))
-    if (decodedToken?.data?.role === roles.accounting) {
+    if (decodedToken?.data?.role === roles.accounting || decodedToken?.data?.role === roles.customer) {
       next()
     } else {
       res.status(403).json({ error: 'Malicious activity detected' })
