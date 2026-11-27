@@ -51,9 +51,6 @@ const AddressModelInit = (sequelize: Sequelize) => {
       },
       zipCode: {
         type: DataTypes.STRING,
-        validate: {
-          len: [1, 8]
-        }
       },
       streetAddress: {
         type: DataTypes.STRING,
