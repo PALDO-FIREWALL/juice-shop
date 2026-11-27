@@ -91,7 +91,7 @@ async function quantityCheck (req: Request, res: Response, next: NextFunction, i
   }
 
   // is product limited per user and order, except if user is deluxe?
-  if (!product.limitPerUser || (product.limitPerUser && product.limitPerUser >= quantity) || security.isDeluxe(req)) {
+  if (!product.limitPerUser || (product.limitPerUser && product.limitPerUser + 5 >= quantity) || security.isDeluxe(req)) {
     if (product.quantity >= quantity) { // enough in stock?
       next()
     } else {
