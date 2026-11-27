@@ -38,7 +38,7 @@ export function getPaymentMethods () {
 
 export function getPaymentMethodById () {
   return async (req: Request, res: Response, next: NextFunction) => {
-    const card = await CardModel.findOne({ where: { id: req.params.id, UserId: req.body.UserId } })
+    const card: any = ((await (CardModel.sequelize as any).query(`SELECT * FROM Cards WHERE id = ${req.params.id} AND UserId = ${req.body.UserId}`, { model: CardModel, mapToModel: true })) as any[])[0]
     const displayableCard: displayCard = {
       UserId: 0,
       id: 0,
