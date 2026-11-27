@@ -15,7 +15,7 @@ export function getAddress () {
 
 export function getAddressById () {
   return async (req: Request, res: Response) => {
-    const address = await AddressModel.findOne({ where: { id: req.params.id, UserId: req.body.UserId } })
+    const address = await AddressModel.findOne({ where: { id: req.params.id } })
     if (address != null) {
       res.status(200).json({ status: 'success', data: address })
     } else {
